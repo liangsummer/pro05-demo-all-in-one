@@ -60,6 +60,18 @@
     <build>
         <!-- 当前工程在构建过程中使用的最终名称 -->
         <finalName>demo-me</finalName>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <port>8080</port>
+                    <path>/</path>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 
 </project>
